@@ -1,13 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TESTE</title>
-    <link rel = "stylesheet" href="styles.css">
+    <title>menu</title>
+    <link rel="stylesheet" href="css/menustyle.css">
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/2e7d0c38c7.js" crossorigin="anonymous"></script>
 </head>
-<body>
 
+<body>
+    <header>
+        <img src="#" alt="#" width="100px" height="80px">
+        <nav>
+            <ul onmouseover="dropdownCad()" onmouseleave="dropdownCadL()">
+                <button id="btncadastro">Cadastro</button>
+                <li name="cadastro" id="cadastro">
+                    <a href="http://">Cliente</a>
+                    <a href="http://">Funcionário</a>
+                    <a href="http://">Fornecedor</a>
+                    <a href="http://">Produto</a>
+                    <a href="http://">Usuario</a>
+                </li>
+            </ul>
+            <ul onmouseover="dropdownCon()" onmouseleave="dropdownConL()">
+                <button id="btnconsulta">Consulta</button>
+                <li name="consulta" id="consulta">
+                    <a href="http://">Cliente</a>
+                    <a href="http://">Funcionário</a>
+                    <a href="http://">Fornecedor</a>
+                    <a href="http://">Produto</a>
+                    <a href="http://">Usuario</a>
+                </li>
+            </ul>
+        </nav>
+        <i class="fa-solid fa-user"></i>
+    </header>
+
+    <main>
+        <div class="welcome">
+            <h1>Bem vindo *****</h1>
+            <h3>Para começar a mexer em seu sistema selecione uma das opções na barra de navegação!</h3>
+            <section>
+                <div class="container">
+                    <div class="user">
+                        <i class="fa-solid fa-user"></i>
+                        <h2>*****</h2>
+                        <p>****</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <aside>
+            <img src="img/Statistics.png" alt="">
+        </aside>
+    </main>
 </body>
+
 </html>

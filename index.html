@@ -76,12 +76,12 @@
                     <p>Já tem cadastro? <a href="#" onclick="signIn()">Entre Aqui</a></p>
                 </div>
                 <div class="campo">
-                    <label for="firstname">Insira seu Primeiro Nome</label>
-                    <input type="text" name="firstname" id="firstname" placeholder="Primeiro nome">
+                    <label for="nome">Insira seu Primeiro Nome</label>
+                    <input type="text" name="nome" id="nome" placeholder="Primeiro nome" required="true">
                 </div>
                 <div class="campo">
-                    <label for="secondname">Insira seu Sobrenome</label>
-                    <input type="text" name="secondname" id="secondname" placeholder="Sobrenome">
+                    <label for="sobrenome">Insira seu Sobrenome</label>
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required="true">
                 </div>
                 <div class="campo">
                     <label for="email">Insira seu Email</label>
@@ -92,7 +92,7 @@
                     <input type="password" name="passwordSignUp" id="passwordSignUp" placeholder="Senha">
                 </div>
                 <div class="campo">
-                    <input type="button" id="button" value="Cadastrar" onclick="cadastrarUsuario()"/>
+                    <input type="submit" id="button" value="Cadastrar" onclick="cadastrarUsuario()"/>
                 </div>
             </div>
         </form>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span id="resultado"></span>
+    <script>
+        // Cria uma instância de XMLHttpRequest
+        var xhr = new XMLHttpRequest();
+    
+        // Configura a solicitação AJAX
+        xhr.open("POST", "resultado.php", true);
+    
+        // Define o callback para manipular a resposta
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            // Manipula a resposta recebida do arquivo PHP
+            var resposta = xhr.responseText;
+            document.getElementById("resultado").innerHTML = resposta;
+          }
+        };
+    
+        // Envia a solicitação
+        xhr.send();
+      </script>
+</body>
+</html>

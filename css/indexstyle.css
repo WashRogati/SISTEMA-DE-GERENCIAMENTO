@@ -171,6 +171,11 @@ input:focus {
     background-color: #0089ED;
     color: white;
     border: none;
+    transition: all 0.5s ease;
+}
+
+#button:active{
+    transform: scale(0.98);
 }
 
 .sign-up{
@@ -178,5 +183,3 @@ input:focus {
     flex-direction: column;
     gap: 30px;
 }
-
-

@@ -2,53 +2,56 @@
 <html lang="pt-br">
 
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Cadastro Cliente</title>
-   <link rel="stylesheet" href="style.css">
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Cadastro Cliente</title>
+      <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-      <form class="cadastro" action="backend.php">
-               <h1>Cadastrar Cliente </h1>
+      <form class="cadastro" action="php/cadastro.php" method="post">
+            <h1>Cadastrar Cliente </h1>
 
-               Primeiro Nome
-               <input class="a" type="txt" name="nome" placeholder="Insira aqui seu nome.">
+            Primeiro Nome
+            <input class="a" type="txt" name="nome" placeholder="Insira aqui seu nome.">
 
-               Sobrenome
-               <input class="a" type="txt" name="sobrenome" placeholder="Insira aqui seu sobrenome.">
+            Sobrenome
+            <input class="a" type="txt" name="sobrenome" placeholder="Insira aqui seu sobrenome.">
 
-               E-Mail
-               <input class="a" type="email" placeholder="E-Mail">
+            CPF
+            <input class="a" type="number" name="cpf" placeholder="Insira o CPF sem ponto.">
 
-               Celular
-               <input class="a" type="number" placeholder="(11)22222222" maxlength="10">
+            RG
+            <input class="a" type="number" name="rg" placeholder="RG" maxlength="7">
 
-               RG
-               <input class="a" type="number" placeholder="RG" maxlength="7">
+            Celular
+            <input class="a" type="number" name="cell" placeholder="(11)22222222" maxlength="10">
 
-               CPF
-               <input class="a" type="number" placeholder="Insira o CPF sem ponto.">
+            CEP
+            <input class="b" type="number" name="cep" placeholder="CEP">
 
-               CEP
-               <input class="b" type="number" placeholder="CEP">
+            Rua
+            <input type="txt" name="rua" placeholder="Insira aqui sua Rua">
 
-               Rua
-               <input type="txt" placeholder="Insira aqui sua Rua">
+            Bairro
+            <input type="txt" name="bairro" placeholder="Insira aqui seu Bairro">
 
-               Bairro
-               <input type="txt" placeholder="Insira aqui seu Bairro">
+            Nº
+            <input type="number" name="num" placeholder="Número da Casa">
 
-               Nº
-               <input type="number" placeholder="Número da Casa">
+            Cidade
+            <input type="txt" name="cidade" placeholder="Insira aqui sua Cidade">
 
-               Cidade
-               <input type="txt" placeholder="Insira aqui sua Cidade">
+            UF
+            <input type="txt" name="estado" maxlenght="3" placeholder="UF">
 
-               UF
-               <input type="txt" maxlenght="3" placeholder="UF">
+            E-Mail
+            <input class="a" name="email" type="email" placeholder="E-Mail">
+
+            <input type="submit" value="enviar">
       </form>
 </body>
+
 
 </html>
