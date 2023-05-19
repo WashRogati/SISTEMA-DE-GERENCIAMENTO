@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Cadastro Cliente</title>
+      <link rel="stylesheet" href="css/cadastrostyle.css">
+</head>
+
+<body>
+      <form class="cadastro" action="php/cadastro.php" method="post">
+            <h1>Cadastrar Produto </h1>
+            <section>
+                  <div class="campo">
+                        Primeiro Nome
+                        <input class="a" type="txt" name="nome" placeholder="Insira aqui seu nome.">
+                  </div>
+                  <div class="campo">
+                        Sobrenome
+                        <input class="a" type="txt" name="sobrenome" placeholder="Insira aqui seu sobrenome.">
+                  </div>
+            </section>
+            <section>
+                  <div class="campo">
+                        CPF
+                        <input class="a" type="number" name="cpf" placeholder="Insira o CPF sem ponto.">
+                  </div>
+
+                  <div class="campo">
+                        RG
+                        <input class="a" type="number" name="rg" placeholder="RG" maxlength="7">
+                  </div>
+            </section>
+            <section>
+                  <div class="campo">
+                        CEP
+                        <input class="b" type="number" name="cep" placeholder="CEP">
+                  </div>
+                  <div class="campo">
+                        Rua
+                        <input type="txt" name="rua" placeholder="Insira aqui sua Rua">
+                  </div>
+            </section>
+            <section>
+                  <div class="campo">
+                        Bairro
+                        <input type="txt" name="bairro" placeholder="Insira aqui seu Bairro">
+                  </div>
+                  <div class="campo">
+                        Nº
+                        <input type="number" name="num" placeholder="Número da Casa">
+                  </div>
+            </section>
+            <section>
+                  <div class="campo">
+                        Cidade
+                        <input type="txt" name="cidade" placeholder="Insira aqui sua Cidade">
+                  </div>
+                  <div class="campo">
+                        UF
+                        <input type="txt" name="estado" maxlenght="3" placeholder="UF">
+                  </div>
+            </section>
+            <section>
+                  <div class="campo">
+                        Celular
+                        <input class="a" type="number" name="cell" placeholder="(11)22222222" maxlength="10">
+                  </div>
+                  <div class="campo">
+                        E-Mail
+                        <input class="a" name="email" type="email" placeholder="E-Mail">
+                  </div>
+            </section>
+            <input type="submit" value="enviar">
+      </form>
+</body>
+
+
+</html>
