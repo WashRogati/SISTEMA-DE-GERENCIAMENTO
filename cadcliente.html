@@ -28,12 +28,12 @@
             <section>
                   <div class="campo">
                         CPF
-                        <input class="a" type="number" name="cpf" placeholder="Insira o CPF sem ponto." onblur="TestaCPF(this.value);">
+                        <input class="a" type="text" name="cpf" placeholder="Insira o CPF sem ponto." onblur="TestaCPF(this.value);">
                   </div>
 
                   <div class="campo">
                         RG
-                        <input class="a" type="number" name="rg" placeholder="RG" maxlength="7">
+                        <input class="a" type="text" name="rg" placeholder="RG" maxlength="12">
                   </div>
             </section>
             <section>
@@ -77,6 +77,14 @@
                   </div>
             </section>
             <input type="submit" value="enviar">
+      </form>
+
+      <form action="php/upload.php" method="post" enctype="multipart/form-data">
+            <div class="campo">
+                  ENVIE SUA FOTO
+                  <input class="a" name="foto" type="file" placeholder="FOTO">
+                  <input type="submit" value="Enviar Foto!">
+            </div>
       </form>
 </body>
 

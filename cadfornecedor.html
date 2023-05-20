@@ -25,28 +25,28 @@
             <section>
                   <div class="campo">
                         CPF
-                        <input class="a" type="number" name="cpf" placeholder="Insira o CPF sem ponto.">
+                        <input class="a" type="text" name="cpf" placeholder="Insira o CPF sem ponto." onblur="TestaCPF(this.value);">
                   </div>
 
                   <div class="campo">
                         RG
-                        <input class="a" type="number" name="rg" placeholder="RG" maxlength="7">
+                        <input class="a" type="text" name="rg" placeholder="RG" maxlength="12">
                   </div>
             </section>
             <section>
                   <div class="campo">
                         CEP
-                        <input class="b" type="number" name="cep" placeholder="CEP">
+                        <input class="b" type="number" name="cep" id="cep"placeholder="CEP" onblur="pesquisacep(this.value);">
                   </div>
                   <div class="campo">
                         Rua
-                        <input type="txt" name="rua" placeholder="Insira aqui sua Rua">
+                        <input type="txt" name="rua" id="rua" placeholder="Insira aqui sua Rua">
                   </div>
             </section>
             <section>
                   <div class="campo">
                         Bairro
-                        <input type="txt" name="bairro" placeholder="Insira aqui seu Bairro">
+                        <input type="txt" id="bairro" name="bairro" placeholder="Insira aqui seu Bairro">
                   </div>
                   <div class="campo">
                         Nº
@@ -56,11 +56,11 @@
             <section>
                   <div class="campo">
                         Cidade
-                        <input type="txt" name="cidade" placeholder="Insira aqui sua Cidade">
+                        <input type="txt" id="cidade" name="cidade" placeholder="Insira aqui sua Cidade">
                   </div>
                   <div class="campo">
                         UF
-                        <input type="txt" name="estado" maxlenght="3" placeholder="UF">
+                        <input type="txt" name="estado"  id="uf" maxlenght="3" placeholder="UF">
                   </div>
             </section>
             <section>
@@ -74,6 +74,14 @@
                   </div>
             </section>
             <input type="submit" value="enviar">
+      </form>
+
+      <form action="php/upload.php" method="post" enctype="multipart/form-data">
+            <div class="campo">
+                  ENVIE SUA FOTO
+                  <input class="a" name="foto" type="file" placeholder="FOTO">
+                  <input type="submit" value="Enviar Foto!">
+            </div>
       </form>
 </body>
 

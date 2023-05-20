@@ -163,9 +163,12 @@ section > h1{
     border-radius: 80px;
 }
 
-aside{
+aside > img{
     width: 40vw;
+    height: 35vw;
 }
+
+
 
 
 

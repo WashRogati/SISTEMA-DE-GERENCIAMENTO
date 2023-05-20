@@ -1,0 +1,6 @@
+
+Cliente: Lucas,Araújo,95345939071,45.671.237-9,92985940512,69008125,Beco 26 de Março,473,Colônia Antônio Aleixo,Manaus, AM, lucasmanoelaraujo@systrix.com.br
+
+Cliente: ,,,,,,,,,, , 
+
+Cliente: ,,,,,,,,,, , 
